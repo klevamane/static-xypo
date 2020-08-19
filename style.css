@@ -117,7 +117,7 @@ nav ul li a {
 
 /* About Section */
 
-#about {
+#about, #offer {
     padding: 100px 0;
     /* vertically centered content */
     align-items: center;
@@ -189,4 +189,123 @@ nav ul li a {
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: 400;
+}
+
+.feature-btn {
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.feature-btn .line {
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+/* Courses */
+
+#courses {
+    /* top,bottom 100px */
+    padding: 100px 0
+}
+
+.course-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.course-left-column,
+.course-right-column {
+    flex-basis: 50%;
+}
+
+.course-right-column img {
+    width: 50%;
+}
+
+
+/* Offer */
+
+#offer button {
+    margin: 30px 0;
+}
+
+/* Contact */
+
+.contact-row {
+    display: flex;
+    align-items: center; 
+}
+
+.contact-left-column, 
+.contact-right-column {
+    flex-basis: 50%;
+}
+
+.contact-right-column img {
+    width: 100%;
+}
+
+form {
+    max-width: 350px;
+    margin: 30px 0;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+
+    /* using border box so that it's width */
+    /* wont increase if padding or border is added */
+    box-sizing: border-box;
+
+    border: 2px solid #fab3c4
+
+}
+
+.btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box button {
+    flex-basis: 49%;
+    padding: 18px 0;
+}
+
+
+/* Footer */
+
+#footer {
+    padding: 50px 0 30px;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #f67c92;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+
+    /* will use the remaining 15% from left and right footer column */
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+}
+
+.footer-right-column {
+    flex-basis: 35%;
+}
+.footer-left-column {
+    flex: 50%;
 }
