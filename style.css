@@ -309,3 +309,63 @@ hr {
 .footer-left-column {
     flex: 50%;
 }
+
+.footer-links {
+    display: flex;
+    /* will use the remaining 15% from left and right footer column */
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+}
+
+.link-title h4 {
+    color: #f67c92;
+    margin-bottom: 20px;
+}
+
+.link-title small {
+    font-size: 13px;
+    color: #777 ;
+}
+
+.footer-info {
+    display: flex;
+    /* will use the remaining 15% from left and right footer column */
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.footer-logo img{
+    width: 100px;
+}
+
+.footer-logo button {
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.footer-logo,
+.copyright-text {
+    flex-basis: 40%;
+}
+
+/* Social icons */
+
+.social-icons {
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.social-icons img {
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
