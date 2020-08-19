@@ -1,0 +1,192 @@
+/* Apply to all html elements */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 15px;
+    line-height: 18px;
+    color: #777;
+}
+
+#header {
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.header-text {
+    max-width: 350px;
+    margin-top: 140px;
+}
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.logo {
+    margin-top: 30px;
+    width: 100px;
+}
+
+/* Make tiny square boxes */
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 15px 0;
+}
+
+.btn {
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border:  2px solid #f67c92;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-text button {
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+/* Decorative lines */
+
+.line-1 {
+    width: 15px;
+    height: 15px;
+    background: #f67c92;
+    display: inline-block;
+}
+
+.line-2 {
+    width: 80px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+
+.line-3 {
+    width: 60px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+
+.line {
+    line-height: 8px;
+}
+
+#side-nav {
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    background: #f67c92;
+    z-index: 2;
+    transition: .5s;
+}
+
+nav ul li {
+    margin: 50px 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu-btn {
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    cursor: pointer;
+    /* z index only works for positioned elements */
+    /* it indicates the stack order of an element, something like move to back in corel draw/ */
+    z-index: 2;
+}
+
+/* About Section */
+
+#about {
+    padding: 100px 0;
+    /* vertically centered content */
+    align-items: center;
+
+    /* It defines whether the flex items are forced in a single line or can be flowed into multiple lines.  */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-left-col {
+    flex-basis: 50%;
+}
+
+.about-left-col img {
+    width: 100%;
+}
+
+.about-right-col {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.about-text {
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.about-text h2 {
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+}
+.about-text h3 {
+    font-size: 20px;
+    font-style: italic;
+    color: #797979;
+}
+
+/* Features */
+
+#features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.feature-row {
+    width: 80%;
+    /* place at center using the remaining 20% to align */
+    margin: auto;
+    display: flex;
+    /* vertical */
+    align-items: center;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-col {
+    flex-basis: 25%;
+    text-align: center;
+
+}
+
+.feature-col img {
+    width: 100px;
+}
+
+.feature-col h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}

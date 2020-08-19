@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <title>Responsive Website design</title>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="header-text">
+                <h1>Bring learning to everyone</h1>
+                <span class="square"></span>
+                <p>There are so many ways you can reach out to people to provide valuable sustainable skills for them</p>
+                <button class="btn">Read more</button>
+                <div class="line">
+                    <span class="line-1"></span><br/>
+                    <span class="line-2"></span><br/>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <nav id="side-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" alt="menu-button" id="menu-btn">
+
+
+    <!-- About Section-->
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/about.png" alt="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"> </span><span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nihil facilis quae consequatur ad repudiandae omnis dicta consequuntur dolorem, obcaecati quo numquam eius eum eveniet inventore sequi reprehenderit ex eligendi.</p>
+                <h2>Some more text here</h2>
+                <span class="square"></span><span class="square"></span>
+                <h3>--by someonehere</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features section -->
+
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="images/pic-1.png" alt="" srcset="">
+                <h4>Learn Anywhere</h4>
+                <p>Switch between computer, tablet or mobile</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/pic-2.png" alt="" srcset="">
+                <h4>Expert trainers</h4>
+                <p>Passionate teaching</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/pic-3.png" alt="" srcset="">
+                <h4>Unlimited Access</h4>
+                <p>Learn anything any time you want</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    let sideNav = document.getElementById("side-nav")
+    const toggleButton = document.getElementById("menu-btn")
+    sideNav.style.right = "-250px";
+    toggleButton.onclick = function() {
+        if(sideNav.style.right == "-250px") {
+            sideNav.style.right = "0"
+        }
+        else {
+            sideNav.style.right = "-250px"
+        }
+    }
+
+</script>
+</html>
