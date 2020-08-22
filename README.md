@@ -1,9 +1,4 @@
-live demo:
-https://klevamane.github.io/static-xypo/index.html
-
-
-
-
+**Demo**: [Demo](https://klevamane.github.io/static-xypo/index.html) :school_satchel:
 
 
 
