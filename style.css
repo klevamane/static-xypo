@@ -94,9 +94,14 @@ p {
     transition: .5s;
 }
 
+
 nav ul li {
     margin: 50px 20px;
     list-style: none;
+}
+
+nav ul li a:hover {
+    color: #e6d1d4;
 }
 
 nav ul li a {
@@ -368,4 +373,66 @@ hr {
     width: 20px;
     margin: 0 auto 20px;
     cursor: pointer;
+}
+
+/* Media query */
+
+/* <=770px */
+@media only screen and (max-width: 770px) {
+    #header {
+        background-image: none;
+    }
+
+    .header-text {
+        margin-top: 100px;
+    }
+    
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .logo {
+        margin-top: 27px;
+        width: 70px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #menu-btn {
+        width: 40px;
+        position: fixed;
+        right: 50px;
+        /* z index only works for positioned elements */
+        /* it indicates the stack order of an element, something like move to back in corel draw/ */
+        z-index: 2;
+    }
+
+    
+    .about-left-col img {
+        width: 100%;
+    }
+    
+    .about-left-col,
+    .about-right-col {
+        flex-basis: 100%;
+    }
+
+    .about-text {
+        margin: 50px 50px 0;
+        display: inline-block;
+    }
+    .about-text h2 {
+        margin: 50px 0 10px;
+        font-size: 18px;
+        font-style: italic;
+    }
+    .about-text h3 {
+        font-size: 20px;
+        font-style: italic;
+        color: #797979;
+    }
+    
 }
